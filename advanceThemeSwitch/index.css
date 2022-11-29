@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body[data-theme= "light"]{
+    --color1: rgba(196, 220, 241);
+    --color2: white;
+    --color3: rgba(200, 200, 200);
+    --color4: rgba(80, 82, 110);
+    --font-family: 'Roboto', sans-serif;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+body[data-theme= "dark"]{
+    --color1: #1E1F26;
+    --color2: #292c33;
+    --color3: rgba(39, 40, 42);
+    --color4: rgba(186, 186, 202);
+    --font-family: 'Roboto', sans-serif;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+body{
+    box-sizing: border-box;
+    font-family: var(--font-family);
+    background: var(--color1);
+    color: var(--color4);
+}
+
+header nav{
+    padding: 1.5rem;
+    background: var(--color2);
+    color: var(--color3);
+}
+
+header nav .logo{
+    color: var(--color4);
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.checkbox{
+    opacity: 0;
+    position: absolute;
+}
+
+.checkbox:checked+.label .ball{
+    transform: translateX(24px);
+    -webkit-transform: translateX(24px);
+    -moz-transform: translateX(24px);
+    -ms-transform: translateX(24px);
+    -o-transform: translateX(24px);
+}
+
+.label{
+    top: 1.2rem;
+    right: 1.5rem;
+    width: 51px;
+    height: 26px;
+    background: var(--color4);
+    cursor: pointer;
+    position: absolute;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.ball{
+    width: 22px;
+    height: 22px;
+    left: 3px;
+    top: 2px;
+    background: var(--color2);
+    position: absolute;
+    border-radius: 50%;
+    transition: 0.5s;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+.main{
+    margin-top: 5rem;
+}
+
+.main .container{
+    width: 40%;
+    background: var(--color2);
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.container p{
+    margin-top: 1rem;
+}

@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #262626;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    min-width: 420px;
+    height: 12rem;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    transition: height 0.5s ease;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    -webkit-transition: height 0.5s ease;
+    -moz-transition: height 0.5s ease;
+    -ms-transition: height 0.5s ease;
+    -o-transition: height 0.5s ease;
+}
+
+.active{
+    height: 25rem;
+}
+
+.container h1{
+    font-weight: 500;
+    font-size: 25px;
+}
+
+.container p{
+    margin-top: 0.5rem;
+}
+
+.form{
+    margin-top: 1rem;
+}
+
+.form :where(input, button){
+    width: 100%;
+    height: 50px;
+    border: 0;
+    outline: 0;
+}
+
+.form input{
+    border: 1px solid #999;
+    padding: 0px 10px;
+    width: 95%;
+    font-size: 18px;
+}
+
+.form button{
+    margin-top: 1rem;
+    background: #262626;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.qrCode{
+    border: 1px solid #999;
+    margin-top: 1.8rem;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.active .qrCode{
+    opacity: 1;
+    pointer-events: all;
+    transition: opacity 0.4s 0.04s ease;
+    -webkit-transition: opacity 0.4s 0.04s ease;
+    -moz-transition: opacity 0.4s 0.04s ease;
+    -ms-transition: opacity 0.4s 0.04s ease;
+    -o-transition: opacity 0.4s 0.04s ease;
+}

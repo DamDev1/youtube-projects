@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    box-sizing: border-box;
+    background: #8a2be2;
+}
+
+.wrapper{
+    width: 40%;
+    min-width: 570px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+.container{
+    width: 100%;
+    padding: 30px 30px 50px;
+    background: white;
+    height: 100%;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.container h1{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.skills .details{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.bar{
+    position: relative;
+    border: 2px solid #a437c5;
+    width: 100%;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.bar div{
+    position: relative;
+    width: 0;
+    height: 9px;
+    background: #a437c5;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.skills:not(:last-child){
+    margin-bottom: 30px;
+}
+
+.htmlBar{
+    animation: html 2s forwards;
+    -webkit-animation: html 2s forwards;
+}
+
+.cssBar{
+    animation: css 2s forwards;
+    -webkit-animation: css 2s forwards;
+}
+
+.jsBar{
+    animation: js 2s forwards;
+    -webkit-animation: js 2s forwards;
+}
+
+.pyBar{
+    animation: py 2s forwards;
+    -webkit-animation: py 2s forwards;
+}
+
+@keyframes html{
+    100%{
+        width: 90%;
+    }
+}
+
+@keyframes css{
+    100%{
+        width: 80%;
+    }
+}
+
+@keyframes js{
+    100%{
+        width: 50%;
+    }
+}
+
+@keyframes py{
+    100%{
+        width: 30%;
+    }
+}
