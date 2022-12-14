@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tab in a tab</title>
+</head>
+<body>
+    
+    <main>
+        <div class="container">
+            <div class="tab_list_container">
+                <p class="tab-list active" onclick="openTabOne('home')">Home</p>
+                <p class="tab-list" onclick="openTabOne('about')">About</p>
+                <p class="tab-list" onclick="openTabOne('service')">Service</p>
+                <p class="tab-list" onclick="openTabOne('contact')">Contact</p>
+            </div>
+
+            <div class="tab_contentContainer">
+                <div class="tab-content active-tab" id="home">
+                    <div class="containerTwo">
+                        <div class="tab_list_containerTwo">
+                            <p class="tab-listTwo activeTwo" onclick="openTabTwo('homeTwo')">Home</p>
+                            <p class="tab-listTwo" onclick="openTabTwo('aboutTwo')">About</p>
+                            <p class="tab-listTwo" onclick="openTabTwo('serviceTwo')">Service</p>
+                            <p class="tab-listTwo" onclick="openTabTwo('contactTwo')">Contact</p>
+                        </div>
+    
+                        <div class="tab_contentContainer_Two">
+                            <div class="tab_content_two activeBarTwo" id="homeTwo">
+                                <h1>Home Section</h1>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia laudantium, esse nulla iure quidem, saepe expedita quaerat voluptates deserunt obcaecati error ut numquam id exercitationem, fugiat doloribus cumque explicabo accusantium.</p>
+                            </div>
+    
+                            <div class="tab_content_two" id="aboutTwo">
+                                <h1>About Section</h1>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia laudantium, esse nulla iure quidem, saepe expedita quaerat voluptates deserunt obcaecati error ut numquam id exercitationem, fugiat doloribus cumque explicabo accusantium.</p>
+                            </div>
+    
+                            <div class="tab_content_two" id="serviceTwo">
+                                <h1>Service Section</h1>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia laudantium, esse nulla iure quidem, saepe expedita quaerat voluptates deserunt obcaecati error ut numquam id exercitationem, fugiat doloribus cumque explicabo accusantium.</p>
+                            </div>
+    
+                            <div class="tab_content_two" id="contactTwo">
+                                <h1>Contact Section</h1>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia laudantium, esse nulla iure quidem, saepe expedita quaerat voluptates deserunt obcaecati error ut numquam id exercitationem, fugiat doloribus cumque explicabo accusantium.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="about">
+                    <h1>About Section</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore eum, quo doloremque quaerat maiores suscipit facere sapiente ad provident blanditiis, tempore eveniet rerum cumque laborum quos quibusdam odit qui. Assumenda?</p>
+                </div>
+
+                <div class="tab-content" id="service">
+                    <h1>Service Section</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore eum, quo doloremque quaerat maiores suscipit facere sapiente ad provident blanditiis, tempore eveniet rerum cumque laborum quos quibusdam odit qui. Assumenda?</p>
+                </div>
+
+                <div class="tab-content" id="contact">
+                    <h1>Contact Section</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore eum, quo doloremque quaerat maiores suscipit facere sapiente ad provident blanditiis, tempore eveniet rerum cumque laborum quos quibusdam odit qui. Assumenda?</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+</html>

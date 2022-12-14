@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: #262626;
+}
+
+.container{
+    background: white;
+    width: 45%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    height: 70vh;
+}
+
+.container .tab_list_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.tab_list_container .tab-list{
+    padding: 15px 55px;
+    background: #1f1f1f1f;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.tab-list:hover{
+    background: white;
+}
+
+.container .active{
+    background: white;
+}
+
+.tab_contentContainer .tab-content{
+    display: none;
+}
+
+.tab-content h1,
+.tab-content p{
+    padding: 1rem;
+}
+
+.tab_contentContainer .active-tab{
+    display: block;
+}
+
+.tab_contentContainer #home .containerTwo{
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+.containerTwo .tab_list_containerTwo{
+    background: #1f1f1f36;
+    height: 63vh;
+}
+
+.tab_list_containerTwo .tab-listTwo{
+    padding: 20px 10px;
+    cursor: pointer;
+}
+
+.tab_list_containerTwo .activeTwo{
+    background: #1f1f1f1f;
+}
+
+.tab_list_containerTwo .tab-listTwo:hover{
+    background: #1f1f1f1f;
+}
+
+.tab_contentContainer_Two .tab_content_two{
+    display: none;
+    padding: 10px;
+}
+
+.tab_content_two p{
+    margin-top: 1rem;
+}
+
+.tab_contentContainer_Two .activeBarTwo{
+    display: block;
+}
