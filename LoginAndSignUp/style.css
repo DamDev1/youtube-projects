@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    box-sizing: border-box;
+    background: #262626;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+main .container{
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    width: 400px;
+}
+
+.container h1{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#signup form{
+    margin-top: 1rem;
+}
+
+form #detail label{
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px 0px;
+    margin-bottom: 5px;
+}
+
+form #detail input{
+    width: 95%;
+    font-size: 18px;
+    padding: 5px 10px;
+    outline: 0;
+    border: 1px solid rgb(92, 92, 92);
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.btnSignUp{
+    margin-top: 15px;
+}
+
+.btnSignUp button{
+    padding: 10px 15px;
+    background: green;
+    font-family: sans-serif;
+    border: 0;
+    color: white;
+    font-size: 15px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    cursor: pointer;
+}
+
+hr{
+    margin-top: 20px;
+}
+
+.already{
+    margin-top: 15px;
+    font-family: sans-serif;
+}
+
+#login{
+    display: none;
+}
+
+.btnLogIn{
+    margin-top: 15px;
+}
+
+.btnLogIn button{
+    padding: 10px 15px;
+    background: green;
+    font-family: sans-serif;
+    border: 0;
+    color: white;
+    font-size: 15px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.dont{
+    margin-top: 15px;
+    font-family: sans-serif;
+}
