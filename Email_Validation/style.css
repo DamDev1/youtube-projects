@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    box-sizing: border-box;
+    background: url("./image/wave-haikei.svg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    font-family: sans-serif;
+}
+
+.container{
+    background: white;
+    width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.container h1{
+    color: rgba(65, 65, 65, 0.678);
+}
+
+.container form{
+    margin-top: 1.5rem;
+}
+
+.inputBox{
+    border-bottom: 3px solid gray;
+    position: relative;
+}
+
+.email{
+    padding-bottom: 10px;
+    width: 90%;
+    border: 0;
+    outline: 0;
+    font-size: 18px;
+}
+
+.message{
+    margin-top: 10px;
+}
+
+.inputBox .invalid{
+    width: 20px;
+    height: 20px;
+    background: url("./image/multiply.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.inputBox .valid{
+    width: 20px;
+    height: 20px;
+    background: url("./image/correct.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
