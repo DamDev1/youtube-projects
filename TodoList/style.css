@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    height: 100vh;
+    background: url("./assest/stacked-peaks-haikei.svg");
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.wrapper{
+   width: 400px;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   -webkit-transform: translate(-50%, -50%);
+   -moz-transform: translate(-50%, -50%);
+   -ms-transform: translate(-50%, -50%);
+   -o-transform: translate(-50%, -50%);
+}
+
+.wrapper h1{
+    width: 100%;
+    padding: 10px;
+    background: #038373;
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    box-shadow: 2px 2px rgba(114, 113, 113, 0.411);
+}
+
+
+.todo_list_container{
+    background: white;
+    margin-top: 1rem;
+    padding: 10px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.list_Container li:nth-child(1){
+    margin: 10px 10px;
+}
+
+.list_Container li{
+    margin: 30px 10px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+.list_Container li .todo{
+    cursor: pointer;
+}
+
+.list_Container li .active{
+    position: relative;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.list_Container li .active::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background: rgb(92, 92, 92);
+    margin-top: 10px;
+}
+
+
+.list_Container li .delete:hover{
+    color: red;
+    cursor: pointer;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+.InputAndSubmit{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    border-bottom: 1px solid grey;
+}
+
+#inputTodo{
+    font-size: 17px;
+    outline: 0;
+    border: 0;
+    width: 100%;
+}
+
+.InputAndSubmit button{
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    background: transparent;
+}
+
+button img{
+    width: 20px;
+    height: 20px;
+}
+
+.add{
+    cursor: pointer;
+    user-select: none;
+    position: absolute;
+    right: -4rem;
+    bottom: 2px;
+    background: white;
+    padding: 15px 20px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    font-size: 18px;
+}
